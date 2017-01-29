@@ -1,5 +1,5 @@
 # DST-Guude
-Repo for Guude DST mod
+Repo for [Guude](https://www.youtube.com/user/GuudeBoulderfist) [Don't Starve Together](http://dontstarvegame.com) mod
 
 ## Resources
 In general, this is a great resource: [[Don't Starve Together] Mods and Tools](http://forums.kleientertainment.com/forum/79-dont-starve-together-mods-and-tools/)
