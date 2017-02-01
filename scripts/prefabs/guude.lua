@@ -168,7 +168,7 @@ local master_postinit = function(inst)
 	player:AddComponent("childspawner")
 	player.components.childspawner:SetMaxChildren(20)
 	player.components.childspawner.childname="guudebee"
-	--player.components.childspawner:SetRareChild("guudebee", .1) -- maybe use this for bats?
+	--player.components.childspawner:SetRareChild("guudebee", .1) -- TODO: Use this for Bee Guards
 	player.components.childspawner.spawnperiod=1
 	player.components.childspawner.regening=true
 	player.components.childspawner:SetRegenPeriod(.1,0)
@@ -229,14 +229,28 @@ local master_postinit = function(inst)
 				
 				if not inst:HasTag("nervous_sweating_1") then
 					inst:AddTag("nervous_sweating_1")
-					inst.components.talker:Say("I'm getting nervous...", 2.5, true)
+					
+					if not inst:HasTag("sweat_muted") then
+						inst.components.talker:Say("I'm getting nervous...", 2.5, true)
+						inst:AddTag("sweat_muted")
+						inst:DoTaskInTime(10, function(inst)
+							inst:RemoveTag("sweat_muted")
+						end)
+					end
 				end
 			elseif inst.components.sanity.current <= 25 and inst.components.moisture:GetMoisture() < 65 and not TheWorld.state.israining then
 				inst.components.moisture:DoDelta(.3+inst.components.moisture:GetDryingRate(0))
 				
 				if not inst:HasTag("nervous_sweating_2") then
 					inst:AddTag("nervous_sweating_2")
-					inst.components.talker:Say("I'm sweating so much right now!", 2.5, true)
+					
+					if not inst:HasTag("sweat_muted") then
+						inst.components.talker:Say("I'm sweating so much right now!", 2.5, true)
+						inst:AddTag("sweat_muted")
+						inst:DoTaskInTime(10, function(inst)
+							inst:RemoveTag("sweat_muted")
+						end)
+					end
 				end
 			elseif inst:HasTag("nervous_sweating_1") and inst.components.sanity.current >= 65 then
 				inst:RemoveTag("nervous_sweating_1")
