@@ -1,8 +1,8 @@
 -- This information tells other players more about the mod
 name = "Guude (Mindcrack)"
-description = "Demo Version"
+description = "A character template for Don't Starve Together. Skins compatible version. [Demo Release]"
 author = "Feldoth"
-version = "0.0.1" -- This is the version of the template. Change it to your own number.
+version = "0.1.1" -- This is the version of the template. Change it to your own number.
 
 -- This is the URL name of the mod's thread on the forum; the part after the ? and before the first & in the url
 forumthread = "/files/file/950-extended-sample-character/"
