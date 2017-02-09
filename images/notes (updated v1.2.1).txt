@@ -6,8 +6,8 @@ Change the Element name to "[character].tex". (Do not change the Texture filenam
 
 Example:
 <Atlas>
-	<Texture filename="names_guude.tex" />
+	<Texture filename="names_esctemplate.tex" />
 	<Elements>
-		<Element name="guude.tex" u1="0.00048828125" u2="0.85498046875" v1="0.1533203125" v2="0.9990234375" />
+		<Element name="esctemplate.tex" u1="0.00048828125" u2="0.85498046875" v1="0.1533203125" v2="0.9990234375" />
 	</Elements>
 </Atlas>
