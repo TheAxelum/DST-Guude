@@ -24,7 +24,7 @@ return {
 		},
 		RUMMAGE =
 		{	
-			GENERIC = "I can't do that.",
+			GENERIC = "I bet Etho could get in there.",
 			INUSE = "I should wait my turn.",	
 		},
         COOK =
@@ -140,8 +140,8 @@ return {
 	ANNOUNCE_WETTER = "uh uh uh I need to dry off!",
 	ANNOUNCE_SOAKED = "Well now I’m soaked.",
 	
-	ANNOUNCE_BECOMEGHOST = "ooOOoooOOOoOooo!!",
-	ANNOUNCE_GHOSTDRAIN = "My humanity is about to start slipping away...",
+	ANNOUNCE_BECOMEGHOST = "Oh dang it!!",
+	ANNOUNCE_GHOSTDRAIN = "I didn't know this before, but I guess I really don't like ghosts.",
 
 	DESCRIBE_SAMECHARACTER = "Is that a mirror?",
 	
@@ -359,12 +359,12 @@ return {
 
         ANCIENT_STATUE = "It seems to throb out of tune with the world.",
 
-        LICHEN = "Only a cyanobacteria could grow in this light.",
+        LICHEN = "How is this even growing?",
 		CUTLICHEN = "Nutritious, but it won't last long.",
 
 		CAVE_BANANA = "It's mushy.",
 		CAVE_BANANA_COOKED = "Yum!",
-		CAVE_BANANA_TREE = "It's dubiously photosynthetical.",
+		CAVE_BANANA_TREE = "Looks like a banana but I don't know if I trust it.",
 		ROCKY = "It has terrifying claws.",
 		
 		COMPASS =
@@ -623,7 +623,7 @@ return {
 			OUT = "Well, that's over.",
 		},
 		CANE = "It makes walking seem much easier!",
-		CATCOON = "A playful little thing.",
+		CATCOON = "You remind me of someone.",
 		CATCOONDEN = 
 		{
 			GENERIC = "It's a den in a stump.",
@@ -1000,7 +1000,7 @@ return {
 		MONSTERLASAGNA = "I cooked it myself!",
 		FLOWERSALAD = "A bowl of foliage.",
         ICECREAM = "I scream for ice cream!",
-        WATERMELONICLE = "Cryogenic watermelon.",
+        WATERMELONICLE = "Mmm, watermelon.",
         TRAILMIX = "A healthy, natural snack.",
         HOTCHILI = "Five alarm!",
         GUACAMOLE = "Avogadro's favorite dish.",
